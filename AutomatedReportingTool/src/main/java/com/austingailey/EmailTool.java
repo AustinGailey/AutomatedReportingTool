@@ -21,6 +21,10 @@ public class EmailTool {
         mailer = MailerBuilder.buildMailer();
     }
 
+    public Email getEmail(){
+        return emailPopulatingBuilder.buildEmail();
+    }
+
     public void addRecipient(String recipientAddress){
         emailPopulatingBuilder.to(recipientAddress);
     }

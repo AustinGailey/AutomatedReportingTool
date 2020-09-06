@@ -11,7 +11,7 @@ public class TestEmailTool {
         emailTool.addRecipient("cgrever17@gmail.com");
         emailTool.addSubject("I'm watching you");
         emailTool.addPlainTextBody("I can send emails!");
-        emailTool.sendEmail();
+        //emailTool.sendEmail();
         Assertions.assertTrue(true);
     }
 }
