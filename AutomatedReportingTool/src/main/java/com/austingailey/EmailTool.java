@@ -9,6 +9,7 @@ import org.simplejavamail.mailer.MailerBuilder;
 import org.simplejavamail.email.EmailPopulatingBuilder;
 import org.simplejavamail.util.ConfigLoader;
 import org.simplejavamail.mailer.config.TransportStrategy;
+import javax.activation.FileDataSource;
 
 public class EmailTool {
     protected Logger log = LoggerFactory.getLogger(EmailTool.class);
@@ -37,6 +38,9 @@ public class EmailTool {
         emailPopulatingBuilder.withPlainText(textBody);
     }
 
+    public void addAttachment(String fileName, FileDataSource file){
+        emailPopulatingBuilder.withAttachment(fileName, file);
+    }
 
     public void sendEmail(){
         Email email = emailPopulatingBuilder.buildEmail();
