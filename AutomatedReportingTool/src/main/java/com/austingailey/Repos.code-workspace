@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../CS3210"
+		},
+		{
+			"path": "../../../../../../../CS3240"
+		},
+		{
+			"path": "../../../../../../../CS3710"
+		},
+		{
+			"path": "../../../../../../../assignment-01-AustinGailey"
+		},
+		{
+			"path": "../../../../../../../20FCS3210"
+		},
+		{
+			"path": "../../../../../.."
+		}
+	],
+	"settings": {
+		"files.watcherExclude": {
+			"**/target": true
+		},
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
